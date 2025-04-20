@@ -52,9 +52,3 @@ So, apply [metalLB-ip-advertisement.yaml](/02_Setup%20a%20Load%20balancer/metalL
   - I made promiscuous mode persistent by adding a [.service](/02_Setup%20a%20Load%20balancer/promisc-on-start.service) file in `/etc/systemd/system` (see solution #1 [here](https://superuser.com/questions/1804774/persistent-promiscuous-mode-in-debian-12)).
 
 - For help with troubleshooting I used [metallb troubleshooting docs](https://metallb.universe.tf/troubleshooting/#using-wifi-and-cant-reach-the-service)
-
-## A note on Ingress - what and why?
-
-- Exposing our services to the outside of the cluster can be done using NodePort and LoadBalancer. But if we need multiple services in our cluster, and want to be able to route incoming requests to the service using the request path, we can use an Ingress. The Ingress will sit in front of multiple services and expose them under the same IP address.
-
-[source](https://www.cortex.io/post/understanding-kubernetes-services-ingress-networking)
