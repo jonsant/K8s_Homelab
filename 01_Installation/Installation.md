@@ -45,3 +45,9 @@
 ## Basic Cluster running!
 - We now have a working cluster with pods that are able to communicate with each other!
 
+## Optional
+
+- Setup [kubectl autocomplete in bash](https://kubernetes.io/docs/reference/kubectl/quick-reference/#kubectl-autocomplete)
+
+  - Make the alias and auto completion persistent by adding the commands to the ~/.bashrc file.
+
