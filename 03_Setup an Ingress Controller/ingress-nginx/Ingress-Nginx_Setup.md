@@ -6,4 +6,6 @@
 
 - Then apply [nginx-ingress-test](/03_Setup%20an%20Ingress%20Controller/ingress-nginx/nginx-ingress-test.yaml), using the nginx ingressClass that was automatically created when installing ingress-nginx using Helm.
 
+  - [K8s Ingress docs](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+
 - Any device in the local network can now access the nginx test app by visiting `http://test.mydomain.local/`
