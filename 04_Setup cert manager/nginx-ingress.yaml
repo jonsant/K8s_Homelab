@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-test
+  namespace: default
+  labels:
+    name: ingress-test
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: nginx-test.example.domain
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: nginx-test-service
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - nginx-test.example.domain
+    secretName: my-certificate-secret-tls

@@ -27,10 +27,14 @@
   - name: my-pool
   - ip range: 192.168.0.79-192.168.0.99
 
+- Ingress-Nginx Loadbalancer service external IP: 192.168.0.89
+
 ## Steps
 
 [1. Basic cluster installation](/01_Installation/Installation.md)
 
 [2. Set up an external Load balancer (MetalLB)](/02_Setup%20a%20Load%20balancer/Setup_a_Load_balancer.md)
 
-[3. Set up an Ingress Controller (Traefik)](/03_Setup%20an%20Ingress%20Controller/Ingress_Controller.md)
+[3. Set up an Ingress Controller (Ingress Nginx)](/03_Setup%20an%20Ingress%20Controller/Ingress_Controller.md)
+
+[4. Set up Cert Manager and a wildcard Certificate verified by Let's Encrypt](/04_Setup%20cert%20manager/Setup_cert_manager.md)
